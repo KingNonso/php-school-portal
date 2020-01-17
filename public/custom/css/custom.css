@@ -1,0 +1,363 @@
+  body {
+      color:#333333;
+      background-color:#FFFFFF;
+  }
+
+  .col0{color:#FFFFFF; background-color:#2D3134; border-top:5px solid #4A5155; }
+  .col1, .col1 a{color:#C4C5C3; background-color:#2D3134;}
+  .col2{color:#FFFFFF; background-color:#02ACEE; padding:15px 0}
+  .col3{color:#666666; background-color:#FFFFFF;}
+  .col3 a{color:#02ACEE; background-color:#FFFFFF;}
+  .col4{color:#CCCCCC; background-color:#2A2B2F;}
+  .col4 a{color:#02ACEE; background-color:#2A2B2F;}
+  .col5, .col5 a{color:#000; background-color:#f6f6f6;}
+
+  /* ----------------------------------------------Generalise-------------------------------------*/
+  .container-fluid {
+      display:block;
+      width:100%;
+      margin:0;
+      text-align:left;
+  }
+
+  #header, #topbar, #topnav, #breadcrumb, #homecontent, #login, #container, #footer, #copyright{
+      position:relative;
+      margin:0 auto 0;
+      display:block;
+      width:960px;
+  }
+  /* ----------------------------------------------Header-------------------------------------*/
+
+  #header{
+      padding:0 0 20px 0;
+  }
+
+  #header #logo{
+      display:block;
+      float:left;
+      width:300px;
+      margin-top:7px;
+      overflow:hidden;
+  }
+
+  #header #logo h1, #header p, #header ul{
+      margin:0;
+      padding:0;
+      list-style:none;
+      line-height:normal;
+  }
+
+  #header #logo h1{
+      font-size:32px;
+  }
+
+
+
+  /*-------------------NAV menu-----------------*/
+  #header #myNavbar{
+      display:block;
+      float:right;
+      width:650px;
+      margin:30px 0 0 0;
+      padding:0;
+      font-size:13px;
+      font-family:Verdana, Arial, Helvetica, sans-serif;
+      text-align:right;
+  }
+  #header ul{
+      margin:0;
+      padding:0;
+      list-style:none;
+  }
+
+  #header li{
+      display:inline;
+      margin-right:35px;
+  }
+  #header li a:link, #header li a:visited, #header li a:hover{
+      margin:0;
+      padding:0 3px 10px 3px;
+      color:#FFFFFF;
+      background-color:#2D3134;
+      border-bottom:1px solid #2D3134;
+  }
+
+  #header li a:hover, #header li.active a{
+      color:#02ACEE;
+      background-color:#2D3134;
+      border-bottom-color:#02ACEE;
+  }
+
+  #header #topnav li.last{
+      margin-right:0;
+  }
+
+
+  .navbar {
+      margin:30px 0 0 0;
+      background-color: #2D3134;
+      z-index: 9999;
+      border: 0;
+      letter-spacing: 1px;
+      border-radius: 0;
+      font-family:Verdana, Arial, Helvetica, sans-serif;
+  }
+  .navbar li a, #header li a, .navbar .navbar-brand {
+      margin:0;
+      padding:0 3px 10px 3px;
+      color:#FFFFFF;
+      background-color:#2D3134;
+      border-bottom:1px solid #2D3134;
+
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+      color:#02ACEE;
+      background-color:#2D3134;
+      border-bottom-color:#02ACEE;
+  }
+  .navbar-default .navbar-toggle {
+      color: #fff !important;
+  }
+
+
+
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }	
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+        font-size: 150px;
+    }
+  }
+
+  * {
+      box-sizing: border-box;
+      -moz-box-sizing: border-box; }
+
+
+  pre {
+      margin: 0 !important;
+      display: inline-block; }
+
+  .token.operator,
+  .token.entity,
+  .token.url,
+  .language-css .token.string,
+  .style .token.string,
+  .token.variable {
+      background: none; }
+
+
+
+  ::-webkit-input-placeholder {
+      color: #BBB; }
+
+  ::-moz-placeholder {
+      /* Firefox 19+ */
+      color: #BBB;
+      opacity: 1; }
+
+  :-ms-input-placeholder {
+      color: #BBB; }
+
+  /*------------------------Featured Slider CSS--------------------  */
+
+  #featured_slide {
+      position:relative;
+      margin:0 auto 0;
+      display:block;
+      width:960px;
+      height:300px;
+      overflow:hidden;
+      font-size:13px;
+      font-family:Verdana, Arial, Helvetica, sans-serif;
+      color:#FFFFFF;
+      background-color:#22C0FD;
+  }
+
+  #featured_slide a{
+      color:#01425A;
+      background-color:#22C0FD;
+  }
+
+  #featured_slide a, #featured_slide ul, #featured_slide img{
+      margin:0;
+      padding:0;
+      border:none;
+      outline:none;
+      list-style:none;
+      text-decoration:none;
+  }
+
+  #featured_slide h1, #featured_slide h2, #featured_slide h3, #featured_slide h4, #featured_slide h5, #featured_slide h6{
+      margin:0 0 15px 0;
+      padding:0 0 8px 0;
+      line-height:normal;
+      font-size:32px;
+      font-weight:normal;
+      font-family:Georgia, "Times New Roman", Times, serif;
+      border-bottom:1px dotted #CCCCCC;
+  }
+
+  /* ----------------------------------------------Content-------------------------------------*/
+
+  .featured_box{
+      position:relative;
+      display:block;
+      width:960px;
+      height:300px;
+      color:#fff;
+      background-color:#22C0FD;
+
+  }
+
+  .featured_box img{
+      display:block;
+      float:left;
+      width:450px;
+      height:300px;
+  }
+
+  .featured_box .floater{
+      display:inline;
+      float:right;
+      width:450px;
+      margin:30px 30px 0 0;
+
+  }
+
+  .featured_box p{
+      margin:0 0 15px 0;
+      padding:0;
+      line-height:1.6em;
+  }
+
+  .featured_box p.readmore{
+      display:block;
+      width:100%;
+      margin:0;
+      padding:0;
+      text-align:right;
+      line-height:normal;
+      text-transform:uppercase;
+  }
+
+  /* ----------------------------------------------Navigation Buttons-------------------------------------*/
+
+  /*
+
+  Navigation dynamically created using: jquery.cycle.setup.js and jquery.cycle.min.js
+
+  HTML Output:
+
+  <div id="fsn">
+    <ul id="fs_pagination">
+      <li><a href="javascript:void()">1</a></li>
+      <li><a href="javascript:void()">2</a></li>
+      <li><a href="javascript:void()">3</a></li>
+      <li><a href="javascript:void()">4</a></li>
+      <li><a href="javascript:void()">5</a></li>
+    </ul>
+  </div>
+
+  */
+
+  #fsn{
+      position:relative;
+      margin:10px auto -5px;
+      display:block;
+      width:960px;
+      height:25px;
+      text-align:center;
+      background-image:url("../../images/trans.png");
+      z-index:1000;
+  }
+
+  #fsn ul{
+      position:relative;
+      margin:0 auto 0;
+      display:block;
+      width:125px;
+      height:20px;
+      padding:5px 0 0 0;
+      overflow:hidden;
+      list-style:none;
+  }
+
+  #fsn ul li, #fsn ul li a{
+      display:block;
+      float:left;
+      width:15px;
+      height:15px;
+      margin:0 10px 0 0;
+      padding:0;
+  }
+
+  #fsn ul li a{
+      float:none;
+      border:none;
+      margin:0;
+      outline:none;
+      text-indent:-5000px;
+      text-decoration:none;
+      background:url("../../images/slide.png") 50% 50% no-repeat;
+  }
+
+  #fsn .activeSlide{
+      background:url("../../images/slide.png") 0% 50% no-repeat;
+  }
+
+  #container, #login{
+      padding:20px 0;
+  }
+
+  #container h1, #container h2{
+      font-size:20px;
+      margin:0 0 15px 0;
+      padding-bottom:8px;
+      color:#666666;
+      background-color:#FFFFFF;
+      border-bottom:1px dotted #999999;
+  }
+  .panel h1, .panel h2{
+      font-size:20px;
+  }
+
+  #login > div {
+      font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+  }
+  #students{
+      color: #000;
+  }
+
+  .imgl, .imgr{border:1px solid #999999; padding:5px;}
+  .imgl{float:left; margin:0 8px 8px 0; clear:left;}
+  .imgr{float:right; margin:0 0 8px 8px; clear:right;}
+

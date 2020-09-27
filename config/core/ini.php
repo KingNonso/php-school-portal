@@ -35,7 +35,7 @@ $GLOBALS['config'] = array(
 	else{
 		//fall back to trad autoload for older php version
 		function __autoload($classname){
-			spl_autoload_register($classname);
+			autoloadClasses($classname);
 		}
 	}
 include 'config/functions/sanitize.php';

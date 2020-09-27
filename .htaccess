@@ -1,0 +1,20 @@
+<IfModule rewrite_module>
+RewriteEngine On
+#RewriteBase /www/doing/mvc/
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-l
+
+
+RewriteRule ^(.+)/?$  index.php?url=$1 [QSA,L]
+
+
+#RewriteRule ^products/([0-9]+)/?$  index.php?product_id=$1 [NC,L] #Handle a prduct requests
+#RewriteRule ^parrots/([A-Za-z0-9-]+)/?$  index.php?product_name=$1&category=$2 [NC,L] #Process parrots
+#RewriteRule ^([A-Za-z0-9-]+)/([A-Za-z0-9-]+)/?$  index.php?category_name=$1&product_name=$2 [NC,L] #Process all products
+
+#RewriteRule ^article/?$ http://localhost/w/index.php
+
+
+</IfModule>

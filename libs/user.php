@@ -70,20 +70,22 @@
         }
         public function get_person_name($author_id){
             $profile =  $this->_db->fetch_exact('info_personal','person_id',$author_id);
-            $name = $profile['firstname']. ' '.$profile['surname'].' '.$profile['othername'];
+            // $name = $profile['firstname']. ' '.$profile['surname'].' '.$profile['othername'];
+            $name = 'Admin';
             //$pix = $this->get_profile_pic($profile['profile_picture']);
             if(!empty($profile['profile_picture'])){
                 $source = URL.'public/uploads/profile-pictures/'. $profile['profile_picture'];
             }else{
-                if($profile['sex']== 'male'){
-                    $avatar = 'male';
-                }else{
-                    $avatar = 'female';
-                }
+                $avatar = 'male';
+                // if($profile['sex']== 'male'){
+                // }else{
+                //     $avatar = 'female';
+                // }
                 $source = URL.'public/images/avatar-'.$avatar.'.png';
             }
 
-            return array($name,$source,$profile['slug']);
+            // return array($name,$source,$profile['slug']);
+            return array($name,$source,'admin');
         }
 
         public function get_post_reply($post_id){

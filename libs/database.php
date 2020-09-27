@@ -194,6 +194,7 @@
 
 
         public function action($action, $table, $where = array(), $order = NULL, $orderly = 'DESC') {
+            $where = $where ? $where:[];
             if (count($where) === 6) {
                 $operators = array('=', '>', '<', '>=', '<=', 'LIKE');
                 $field = $where[0];
@@ -245,6 +246,7 @@
         }
 
         public function pumpAction($action, $table, $where = array(), $order = NULL, $orderly = 'DESC',$concatenate = "AND ") {
+            $where = $where ? $where:[];
             if (count($where) >= 3) {
                 $operators = array('=', '>', '<', '>=', '<=', 'LIKE');
 
@@ -307,6 +309,7 @@
         }
 
         public function action_assoc($action, $table, $where = array(), $order) {
+            $where = $where ? $where:[];
             if(count($where)=== 3){
                 $operators = array('=', '>', '<', '>=', '<=', 'LIKE');
                 $field = $where[0];
@@ -341,6 +344,7 @@
         }
 
         public function limiting_action($action, $table,$limit, $where = array(), $order) {
+            $where = $where ? $where:[];
 
             if(count($where)=== 3){
 
@@ -388,6 +392,7 @@
         }
 
         public function action_join_assoc($action, $table1, $table2, $table1_id, $table2_id, $where = array(), $order){
+            $where = $where ? $where:[];
             if(count($where)=== 3){
                 $operators = array('=','>','<','>=','<=','LIKE');
                 $field = $where[0];
@@ -423,6 +428,7 @@
         }
 
         public function multiple_where($action, $table, $where = array(),$order = NULL){
+            $where = $where ? $where:[];
             if (count($where) === 6) {
                 $operators = array('=', '>', '<', '>=', '<=', 'LIKE');
                 $field = $where[0];
@@ -453,6 +459,7 @@
         }
 
         public function multiple_either($action, $table, $where = array(),$order){
+            $where = $where ? $where:[];
             if(count($where)=== 6){
                 $operators = array('=','>','<','>=','<=','LIKE');
                 $field = $where[0];
@@ -484,6 +491,7 @@
 
 
         public function triple_either($action, $table, $where = array(),$order){ //get value from 3 columns
+            $where = $where ? $where:[];
             if(count($where)=== 9){
                 $operators = array('=','>','<','>=','<=','LIKE');
                 $field = $where[0];

@@ -35,8 +35,8 @@
         <nav class="navbar navbar-default">
             <div class="navbar-header">
                 <div id="logo" >
-                    <h1><a href="#">ITF Staff School</a></h1>
-                    <p> Industrial Training Fund, ITF Staff School</p>
+                    <h1><a href="#">AGSS Nnewi</a></h1>
+                    <p> Anglican Girls Secondary School, Nnewi</p>
                 </div>
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                     <span class="icon-bar"></span>

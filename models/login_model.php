@@ -58,8 +58,12 @@ class Login_Model extends Model {
             $user = $this->find($username);
 
             if ($user) {
-                //print_r($this->data());
-                //die();
+                print_r($this->data()->id);
+                echo '<br/>';
+                print_r($this->data()->password);
+                echo '<br/>';
+                print_r(Hash::make($password, $this->data()->salt));
+                // die();
                 if ($this->data()->password === Hash::make($password, $this->data()->salt)) {
                     if($this->data()->verified === 'yes'){
                         Session::put($this->_sessionName, $this->data()->id);
@@ -232,7 +236,7 @@ class Login_Model extends Model {
                 'password' => Hash::make(Input::get('password'), $salt),
                 'salt' => $salt,
                 'joined' => $this->today,
-                'verified' => 'no',
+                'verified' => 'yes',
                 'lastLogin' => $this->today,
                 'record_tracker' => $hash,
                 'user_perms_id' => 1,

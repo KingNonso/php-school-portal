@@ -106,7 +106,9 @@
                             $custom = $this->db->get('academic_subjects',array('subject_name','=',$s->subject_name),'class_id','ASC')->results();
                             foreach($custom as $c){
                                 $class = $this->db->fetch_exact('academic_classes', 'class_id',$c->class_id);
-                                $for .= $class['class_name'].', ';
+                                if(isset($class['class_name'])){
+                                    $for .= $class['class_name'].', '; // array offset
+                                }
 
                             }
                             $for = chop($for,', ');
@@ -145,7 +147,10 @@
             $result = array();
             foreach($subjects as $s){
                 $class = $this->db->fetch_exact('academic_classes', 'class_id',$s->class_id);
-                $for = $class['class_name'];
+                $for = '';
+                if(isset($class['class_name'])){
+                    $for = $class['class_name']; // array offset
+                }
 
                 $result[] = array(
                     'subject_for' => $for,

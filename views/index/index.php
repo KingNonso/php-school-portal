@@ -80,7 +80,7 @@
             <div class="row">
                 <div class="col-sm-12">
                     <h2><?php echo($about['menu_name'])  ?> </h2>
-                    <img src="<?php echo(URL) ?>public/uploads/photo_gallery/about-ITF-Nigeria.jpg" width="240px" height="130px" alt="" class="img-thumbnail imgl"/>
+                    <img src="<?php echo(URL) ?>public/images/agss.png" width="240px" height="130px" alt="" class="img-thumbnail imgl"/>
                     <p><?php echo($about['content'])  ?></p>
 
 

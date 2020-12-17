@@ -163,7 +163,7 @@
         <div class="col-sm-10 col-sm-offset-1 register-box-body">
             <div class="col-sm-12 text-center">
 
-                <h3 class="error-code text-center">Ministry of Education, Anambra State</h3>
+                <h3 class="error-code text-center">Anambra State Post Primary Schools Service Commission</h3>
                 <h1><b> Anglican Girls' Secondary School, Nnewi.</b></h1>
                 <p>Email address: info@agss.org.ng</p>
 

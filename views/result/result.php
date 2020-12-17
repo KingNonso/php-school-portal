@@ -163,9 +163,9 @@
         <div class="col-sm-10 col-sm-offset-1 register-box-body">
             <div class="col-sm-12 text-center">
 
-                <h3 class="error-code text-center">Ministry of Education, Plateau State</h3>
-                <h1><b> Industrial Training Fund, ITF Staff School</b></h1>
-                <p>Email address: info@itf.edu.ng</p>
+                <h3 class="error-code text-center">Ministry of Education, Anambra State</h3>
+                <h1><b> Anglican Girls' Secondary School, Nnewi.</b></h1>
+                <p>Email address: info@agss.org.ng</p>
 
                 <hr>
                 <h3><b> Statement of Result</b></h3>
@@ -186,7 +186,7 @@
 
                 </div>
                 <div class="col-sm-6 text-right" id="img_holder">
-                    <div class="imgholder"><img src="<?php echo(URL) ?>public/uploads/photo_gallery/about-ITF-Nigeria.jpg" width="150" height="150" alt="" class="img-thumbnail imgl"/></div>
+                    <div class="imgholder"><img src="<?php echo(URL) ?>public/images/agss.png" width="150" height="150" alt="" class="img-thumbnail imgl"/></div>
                 </div>
 
             </div>
